@@ -1,0 +1,11 @@
+dance_start(value = FALSE, contents = FALSE)
+
+
+library(GGally)
+
+str(college)
+ggcorr(college, label = TRUE, label_round = 2, hjust = 0.75, size = 3, color = "blue")
+
+(summary(collegeregression <- lm(rank ~ major_code, data = college)))
+
+dance_save("~/Desktop/college_major_analysis.rds")
